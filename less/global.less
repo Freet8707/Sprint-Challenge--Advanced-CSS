@@ -36,8 +36,19 @@ p {
   background: @nav-bg;  
 }
 
+.headerImg {    
+  img{
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
+
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  @media @phone {
+      width: 90%;
+      margin: 0 5%;
+  }
 }
