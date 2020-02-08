@@ -162,10 +162,16 @@ p {
 }
 .headerImg {
   width: 100%;
+  height: 190px;
+}
+@media (max-width: 500px) {
+  .headerImg {
+    height: 120px;
+  }
 }
 .headerImg img {
   width: 100%;
-  height: auto;
+  max-height: 100%;
   border-radius: 5px;
 }
 .container {
