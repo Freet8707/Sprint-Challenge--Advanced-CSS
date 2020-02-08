@@ -160,8 +160,12 @@ p {
   height: 100px;
   background: #F6F6F6;
 }
+.headerImg {
+  width: 100%;
+}
 .headerImg img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 .container {
