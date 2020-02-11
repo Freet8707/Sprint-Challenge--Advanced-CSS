@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    --An adaptive website will have media breakpoints that activate at specified max-widths, but the elements have static widths(i.e. pixel units) until those breakpoints are called upon.  A fully responsive site however will not only utilize media breaks but also percentage widths and em/rem font sizes to automatically adjust to the viewport size until the break points are called.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    --A desktop first approach is designed with a desktop screen in mind first in css code.  As the screen decreases in size, media queries set at specified "max-widths" will be called upon to adjust to tablet or mobile screens.  In a mobile first approach, though, the code is designed in the opposite manner, starting with mobile design first and utilizing "min-width" as the code cascades to adapt to a larger viewport.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    --This sets the font size to units of '10' and also makes it responsive for accessibility reasons.  This makes it so that if one sets font-size = 2.0rem, for example, it will be equivalent to 20px, if the user has their zoom level to medium for their browser.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    --Preprocessing is a way of making CSS easier to read, organize, and it saves a ton of time when writing out code. For example, through preprocessing languages, one can globally assign values to variables that can be called upon anywhere in your code and thereby changed in one location, without having to scroll through code finding every iteration of that specific value.  There are other things called mixins that work much the same as javascript functions and can be called upon in your css code with the name of the mixin + (), causing whatever values you have added in your mixin to be instantly called upon wherever you wish in your code.  Those are just a couple of examples of how a preprocessing language simplifies your coding when you understand the correct way to use it.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    --My favorite concept would definitely be the use of parametric mixins.  I really like being able to call upon a mixin where I can pass parameters that will instantly cause my elements to utilize flex in the way I choose without having to type out the "display:flex" properties every time, for example.  I would say that I have a pretty good grasp of what we have learned in the LESS language, but still get into some small trouble with nesting inside of less elements, particularly with putting my media queries in the wrong place. It's not too hard to highlight and move them to the right place, thankfully, though.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

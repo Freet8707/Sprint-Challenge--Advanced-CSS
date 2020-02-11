@@ -1,1 +1,19 @@
 // Mixins Here
+.displayF(@direction, @wrap, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btnStyle (@bgdColor, @width, @height, @radius) {
+    background: @bgdColor;
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    .displayF (row, wrap, center, center);
+    &:hover {
+      background: lighten(@bgdColor, 30%);
+    }
+}
